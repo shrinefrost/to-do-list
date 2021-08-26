@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(120deg, #76bbf3, #2943b6e5);
+  font-family: "poppins", sans-serif;
+  color: white;
+  min-height: 100vh;
+}
+header {
+  font-size: 1.5rem;
+}
+
+header,
+form {
+  min-height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+form input,
+form button {
+  padding: 0.5rem;
+  border: none;
+  font-size: 2rem;
+  background: white;
+}
+form button {
+  background: white;
+  color: #2943b6e5;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+form button:hover {
+  color: #76bbf3;
+  background: #2943b6e5;
+}
+
+.Todo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.toDo {
+  margin: 0.5rem;
+  list-style: none;
+  background: white;
+  color: black;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.5s ease-in-out;
+}
+
+.toDo li {
+  flex: 1;
+  margin-left: 1rem;
+}
+
+.completecheckbtn,
+.completetrashbtn {
+  padding: 1rem;
+  background: #f1f509;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+.completetrashbtn {
+  background: rgb(8, 230, 8);
+}
+.completecheckbtn {
+  margin-left: 0.7rem;
+}
+/* .completetrashbtn:hover {
+  background: rgb(230, 24, 24);
+}
+
+.completecheckbtn:hover {
+  background: green;
+} */
+
+.fa-trash,
+.fa-check {
+  pointer-events: none;
+}
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.3;
+}
+.fall {
+  transform: translateY(8rem) rotateZ(20deg);
+  opacity: 0;
+}
